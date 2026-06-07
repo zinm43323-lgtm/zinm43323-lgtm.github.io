@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zin Mar Hlaing | Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#6366f1,#22c55e);
+}
+
+.hero img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
+}
+
+.hero h1{
+    margin:15px 0 5px;
+    font-size:40px;
+}
+
+.hero p{
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:white;
+    color:#111;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 10%;
+}
+
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin:15px 0;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#22c55e;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:30px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Hello! I'm Zin Mar Hlaing</h1>
-    <p>Computer Science Student</p>
+
+<div class="hero">
+    <img src="profile.jpg" alt="Profile">
+    <h1>Zin Mar Hlaing</h1>
+    <p>Computer Science Student | Junior Developer</p>
+
+    <a class="btn" href="https://github.com/zinm43323-lgtm" target="_blank">Visit My GitHub</a>
+</div>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        I am a passionate Computer Science student interested in web development,
+        software engineering, and building real-world projects.
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">MySQL</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Virtual Paint App</h3>
+            <p>Python-based drawing tool for digital painting.</p>
+        </div>
+
+        <div class="project">
+            <h3>Chat Application</h3>
+            <p>Client-server real-time messaging system.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        Email: yourname@gmail.com <br>
+        GitHub: https://github.com/zinm43323-lgtm
+    </div>
+</section>
+
+<footer>
+    © 2026 Zin Mar Hlaing | All Rights Reserved
+</footer>
+
 </body>
 </html>
